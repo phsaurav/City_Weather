@@ -40,7 +40,7 @@ const setValue = (data) => {
 					/>
 					<h1
 						id="weather-city"
-						class="text-5xl font-semibold mb-2 mt-0"
+						class=" text-4xl md:text-5xl font-semibold mb-2 mt-0"
 					>
 						${data.name}
 					</h1>
