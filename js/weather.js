@@ -53,32 +53,9 @@ const setValue = (data) => {
 					>
 						${data.weather[0].main.toUpperCase()}
 					</h2>`;
-	// document.getElementById('info-container').insertAdjacentHTML(
-	// 	'beforeend',
-	// 	`<img
-	// 					id="weather-img"
-	// 					class="mb-0 w-28 image"
-	// 					src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
-	// 					alt=""
-	// 				/>
-	// 				<h1
-	// 					id="weather-city"
-	// 					class="text-5xl font-semibold mb-2 mt-0"
-	// 				>
-	// 					${data.name}
-	// 				</h1>
-	// 				<h3 id="weather-temp" class="text-3xl font-semibold mb-1">
-	// 					${data.main.temp}°C
-	// 				</h3>
-	// 				<h2
-	// 					id="weather-condition"
-	// 					class="text-xl font-semibold mb-8"
-	// 				>
-	// 					${data.weather[0].main.toUpperCase()}
-	// 				</h2>`
-	// );
 	document.body.style.backgroundImage = `url('./images/${data.weather[0].icon}.png')`;
-	document.getElementById('search-btn').style.background = color[data.weather[0].icon];
+	document.getElementById('search-btn').style.background =
+		color[data.weather[0].icon];
 	cityInput.style.borderColor = color[data.weather[0].icon];
 };
 
