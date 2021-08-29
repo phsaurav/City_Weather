@@ -17,7 +17,84 @@
 		<!-- *Header -->
 		<header></header>
 		<!-- *Main Body -->
-		<main></main>
+		<main>
+			<div
+				class="
+					weather
+					mx-auto
+					w-3/4
+					lg:w-2/4
+					2xl:w-5/12
+					mt-20
+					rounded-xl
+					p-6
+				"
+			>
+				<div class="flex justify-center mt-16 container mx-auto">
+					<input
+						id="city-input"
+						onsubmit="return false;"
+						class="
+							border
+							p-3
+							px-5
+							focus:no-border focus:outline-none
+							w-96
+							text-xl
+							rounded-l-md
+						"
+						type="text"
+						placeholder="Enter a location for weather ..."
+					/>
+					<button
+						id="search-btn"
+						onclick="searchWeather()"
+						class="
+							p-3
+							text-xl text-white
+							px-4
+							rounded-r-md
+						"
+						>Search</button
+					>
+				</div>
+				<div
+					class="
+						container
+						mx-auto
+						flex
+						justify-center
+						flex-col
+						w-3/4
+						items-center
+						mt-8
+						text-white
+					"
+				>
+					<img
+						id="weather-img"
+						class="mb-0 w-28 image"
+						src="http://openweathermap.org/img/wn/10d@2x.png"
+						alt=""
+					/>
+					<h1
+						id="weather-city"
+						class="text-5xl font-semibold mb-2 mt-0"
+					>
+						Dhaka
+					</h1>
+					<h3 id="weather-temp" class="text-3xl font-semibold mb-1">
+						38.06°C
+					</h3>
+					<h2
+						id="weather-condition"
+						class="text-xl font-semibold mb-8"
+					>
+						Clouds
+					</h2>
+				</div>
+			</div>
+		</main>
 		<!-- *Footer -->
 		<footer></footer>
 		<!-- *Custom JS -->

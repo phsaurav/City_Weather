@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/01d.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+
+.weather{
+	background: rgba(0, 0, 0, .60);
+	overflow: hidden;
+}
+
+#search-btn{
+	background-color: #F59E0B;
+}
+
+#city-input{
+	border-color: #F59E0B;
+}
+
+/* input:focus{
+	border: 2px solid rgba(255, 166, 0, 0.671);
+} */
